@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Sign Up Form </title>
+
+<link rel="stylesheet" type="text/css" href="signup.css">
+
+<script>
+
+function validateForm() {
+  var y = document.forms["myForm"]["ffirst"].value;
+  if (y == "") {
+    alert("First name must be entered");
+    return false;
+  }
+  
+  var x = document.forms["myForm"]["flast"].value;
+  if (x == "") {
+    alert("Last name must be filled out");
+    return false;
+  }
+  
+   var z = document.forms["myForm"]["femail"].value;
+   if (z == "") {
+    alert("Email number must be entered");
+    return false;
+  
+      }
+	  var w = document.forms["myForm"]["fphone"].value;
+   if (w == "") {
+    alert("Phone number must be entered");
+    return false;
+  
+      }
+  }
+
+</script>
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+<!-- <form name="myForm"  onsubmit="return validateForm()"> -->
+
+<form name="myForm" action ="save.php" method="post" onsubmit="return validateForm()">
+
+ <div class="login-box">
+
+ <h1> Sign Up </h1>
+
+       <div class="textbox">
+
+  <input type="text" placeholder="First Name" name="ffirst" value="">  
+        
+       </div>
+ 
+       <div class="textbox">
+	 
+  <input type="text" placeholder="Last Name" name="flast" value=""> 
+ 
+      </div>
+	  
+      <div class="textbox">
+  
+  <input type="text" placeholder="Email" name="femail" value="">
+ 
+      </div>
+  
+     <div class="textbox">
+   
+ <input type="number" placeholder="Phone" name="fphone" value="">
+  
+     </div>
+  
+ <input class="btn" type="submit" name="" value="Sign Up"> <br> <br>
+ 
+
+ 
+ <center> <a href="signin.html"> Already have an account ? </a> <center>
+  
+     </div>
+  
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var y = document.forms["myForm"]["fid"].value;
+  if (y == "") {
+    alert("Id must be entered");
+    return false;
+  }
+  
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+   var z = document.forms["myForm"]["fphone"].value;
+   if (z == "") {
+    alert("phone number must be entered");
+    return false;
+  
+      }
+  }
+
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Id*: <input type="text" name="fid"> <br> <br>
+  Name: <input type="text" name="fname"> <br> <br>
+  Phone*: <input type="text" name="fphone"> <br> <br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

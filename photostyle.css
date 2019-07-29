@@ -1,0 +1,36 @@
+*{
+	marign:0px;
+	padding:0px;
+}
+
+
+
+img
+{
+ width:200px;
+ height:200px;
+ }
+ 
+ th
+ 
+ {
+ font-size:40px;
+ background-color:purple;
+ }
+ body{
+ 
+ font-family:sans-serif;
+ font-size:25px;
+ text-align:center;
+ background-color:slateblue;
+ }
+ 
+ table
+ {
+ background-color:white;
+ width:40%;
+ }
+ td{
+ 
+ padding:25px;
+ }

@@ -1,0 +1,58 @@
+body
+{
+
+margin:0;
+padding:0;
+background:white;
+
+}
+ 
+ .container
+ {
+	 width:1280px; 
+	 margin:0px auto 0;
+	 display:flex;
+	 flex-direction:row;
+	 flex-wrap:wrap;
+	  
+ }
+
+.container .box
+
+{
+	position:relative;
+	width:1350px;
+	height:400px;
+	background:#ff0;
+	margin:0px;
+	box-sizing:border-box;
+	display:inline-block;
+	
+}
+.container .box .imgBox
+{
+	position: relative;
+	overflow:hidden;
+}
+.container .box .imgBox img 
+{
+	max-width:100%;
+	transition:transform 2s;
+	
+}
+.container .box:hover .imgBox img
+{
+	transform:scale(1.2);
+}
+.container .box .details
+{
+	position:absolute;
+	top:200px;
+	left:500px;
+	bottom:500px;
+	right:400px;
+	background:rgba(0,0,0,.8);
+	font-size:30px;
+	color:white;	
+} 
+

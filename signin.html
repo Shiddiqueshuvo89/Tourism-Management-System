@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Sign In Form </title>
+
+<link rel="stylesheet" type="text/css" href="signin.css">
+<script>
+function validateForm() {
+  
+  var x = document.forms["myForm"]["fusername"].value;
+  if (x == "") {
+    alert("Username must be filled out");
+    return false;
+  }
+  
+   var z = document.forms["myForm"]["fpassword"].value;
+   if (z == "") {
+    alert("Password number must be entered");
+    return false;
+  
+      }
+  }
+
+</script>
+</head>
+<body>
+
+<form name="myForm"  onsubmit="return validateForm()">
+
+<div class="login-box">
+
+<h1> Sign In </h1>
+
+<div class="textbox">
+   
+<input type="text" placeholder="Username" name="fusername" value=""> 
+
+</div>
+<div class="textbox">
+ <input type="password" placeholder="Password" name="fpassword" value="">
+ </div>
+  
+<input class="btn" type="submit" name="" value="Sign in"> 
+</div>
+
+</form>
+
+</body>
+</html>
+
+
